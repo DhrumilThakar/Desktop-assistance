@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <h1>AI Assistant</h1>
+            </div>
+            <div class="status">
+                <span class="status-indicator"></span>
+                <span class="status-text">Active</span>
+            </div>
+            <div class="controls">
+                <button id="startBtn" class="control-btn">
+                    <i class="fas fa-microphone"></i>
+                    Start Listening
+                </button>
+                <button id="stopBtn" class="control-btn">
+                    <i class="fas fa-stop"></i>
+                    Stop
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="command-section">
+                <div class="command-display">
+                    <div class="command-history" id="commandHistory">
+                        <!-- Command history will be displayed here -->
+                    </div>
+                    <div class="current-command">
+                        <span class="prompt">></span>
+                        <span id="currentCommand">Listening...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Quick Actions</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-feature="weather">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Weather</h3>
+                            <p>Check weather conditions</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-feature="tasks">
+                        <div class="feature-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Tasks</h3>
+                            <p>Manage your to-do list</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-feature="notes">
+                        <div class="feature-icon">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Notes</h3>
+                            <p>Take quick notes</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-feature="reminders">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Reminders</h3>
+                            <p>Set and manage reminders</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-feature="music">
+                        <div class="feature-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Music</h3>
+                            <p>Control your music</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-feature="system">
+                        <div class="feature-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="feature-info">
+                            <h3>System</h3>
+                            <p>System controls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
